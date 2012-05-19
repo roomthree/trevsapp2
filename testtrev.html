@@ -22,9 +22,13 @@
 <body>
  
  
-<script type="text/javascript">
-  //your code goes here (or an external file if you choose)
-</script>
+  <script type="text/javascript">
+    //Define your user by initializing StackMob.User with your JSON.
+    var user = new StackMob.User({ username: 'Bill Watterson', password: 'weirdosfromanotherplanet', profession: 'cartoonist'  });
+ 
+    //Creates the user and saves it to StackMob's database asynchronously
+    user.create();
+  </script>
  
 </body>
 </html>
