@@ -61,10 +61,31 @@
   cn.set({ profession: 'baddy' });
   cn.save();
  -->
- 
+ <!--
  <script type="text/javascript">
   var user = new StackMob.User({ username: 'Bill Watterson' });
   user.destroy();
+</script>
+-->
+<script type="text/javascript">
+  var user = new StackMob.User({ username: 'Chuck Norris' });
+  //fetches the user "Chuck Norris" asynchronously
+  user.fetch({
+    success: function(model) {
+      //After StackMob returns "Chuck Norris", print out the result as JSON
+      console.debug(model.toJSON());
+      /*
+       {
+        username: 'Chuck Norris',
+        weaponofchoice: ...,
+        weaknesses: [...],
+        strengths: [...],
+        createddate: ...,
+        lastmoddate: ...
+       }
+       */
+    }
+  });
 </script>
  
 </script>
