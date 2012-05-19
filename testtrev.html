@@ -22,13 +22,20 @@
 <body>
  
  
-  <script type="text/javascript">
-    //Define your user by initializing StackMob.User with your JSON.
-    var user = new StackMob.User({ username: 'Bill Watterson', password: 'weirdosfromanotherplanet', profession: 'cartoonist'  });
- 
-    //Creates the user and saves it to StackMob's database asynchronously
-    user.create();
-  </script>
+ <script type="text/javascript">
+  //Creating a user, but this time with a callback.
+  var user = new StackMob.User({ username: 'Bill Watterson', password: 'weirdosfromanotherplanet', profession: 'cartoonist'  });
+  user.create({
+    //After StackMob successfully saves "Bill Watterson", print out the result
+    success: function(model) {
+      //Print out "Bill Watterson: cartoonist"
+      console.debug(model.get('username') + ': ' + model.get('profession'));
+    },
+    error: function(model, response) {
+      console.debug("curses! we have failed, Hobbes!");
+    }
+  });
+</script>
  
 </body>
 </html>
