@@ -21,8 +21,14 @@
   var Todo = StackMob.Model.extend({
     schemaName: 'todo'  //schemaName must be lowercase
   });
+  
+    var Todos = StackMob.Collection.extend({
+    model: Todo
+  });
 
 </script>
+
+
  
 </head>
 <body>
@@ -94,6 +100,7 @@
     }
   });
  -->
+ <!--
  <script type="text/javascript">
   var todo = new Todo({ action: 'Go back and save Marty!', when: 'back to the future!', priority: 'high' });
   todo.create({
@@ -114,8 +121,15 @@
     }
   });
 </script>
-</script>
- 
+-->
+<script type="text/javascript">
+  var todos = new Todos();
+  todos.fetch({
+    success: function(collection) {
+      //after we've gotten all the Todo items from StackMob, let's see what we have!
+      console.debug(todos.toJSON());
+    }
+  });
 </script>
 </body>
 </html>
