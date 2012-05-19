@@ -37,7 +37,7 @@
   });
 </script>
 -->
-
+<!--
   <script type="text/javascript">
     var user = new StackMob.User({ username: 'Bill Watterson' });
     //fetches the user "Bill Watterson" asynchronously
@@ -48,6 +48,11 @@
       }
     });
   </script>
+ -->
+ <script type="text/javascript">
+  var user = new StackMob.User({ username: 'Chuck Norris' });
+  user.save({ profession: 'nunchucks' }); //asynchronously calls StackMob and updates the "weaponofchoice" field
+</script>
  
 </body>
 </html>
