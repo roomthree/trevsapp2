@@ -55,10 +55,18 @@
   user.save({ profession: 'nunchucks' }); //asynchronously calls StackMob and updates the "weaponofchoice" field
 </script>
  -->
+ <!--
  <script type="text/javascript">
   var cn = new StackMob.User({ username: 'Chuck Norris' });
   cn.set({ profession: 'baddy' });
   cn.save();
+ -->
+ 
+ <script type="text/javascript">
+  var user = new StackMob.User({ username: 'Bill Watterson' });
+  user.destroy();
+</script>
+ 
 </script>
 </body>
 </html>
