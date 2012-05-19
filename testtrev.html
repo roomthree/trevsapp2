@@ -51,6 +51,7 @@
  -->
  <script type="text/javascript">
   var user = new StackMob.User({ username: 'Chuck Norris', password: 'weirdosfromanotherplanet', profession: 'cartoonist' });
+  user.create();
   user.save({ profession: 'nunchucks' }); //asynchronously calls StackMob and updates the "weaponofchoice" field
 </script>
  
