@@ -21,7 +21,7 @@
 </head>
 <body>
  
- 
+ <!--
  <script type="text/javascript">
   //Creating a user, but this time with a callback.
   var user = new StackMob.User({ username: 'Bill Watterson', password: 'weirdosfromanotherplanet', profession: 'cartoonist'  });
@@ -36,6 +36,18 @@
     }
   });
 </script>
+-->
+
+  <script type="text/javascript">
+    var user = new StackMob.User({ username: 'Bill Watterson' });
+    //fetches the user "Bill Watterson" asynchronously
+    user.fetch({
+      success: function(model) {
+        //After StackMob returns "Bill Watterson", print out the result
+        console.debug(model.get('username') + ': ' + model.get('profession'));
+      }
+    });
+  </script>
  
 </body>
 </html>
