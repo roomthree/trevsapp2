@@ -153,8 +153,8 @@
 </script>
 -->
 <script type="text/javascript">
-  var recreationsite = new Recreationsite({ recreationtest: 'Go back and save Marty!' });
-  recreationsite.create({
+  var recreationsitez = new Recreationsite({ recreationtest: 'Go back and save Marty!' });
+  recreationsitez.create({
     success: function(model) {
       //Great Scott! We've saved the task to StackMob!  Let's see what we get back.
       console.debug(model.get('recreationtest')); //Prints "Go back and save Marty!"
@@ -164,7 +164,7 @@
       console.debug('ID is: ' + model.get('recreationsite_id'));
  
       //And let's fetch the task from StackMob again AFTER the object has been saved server side for sake of example.
-      recreationsite.fetch({
+      recreationsitez.fetch({
         success: function(model) {
           console.debug(model.toJSON());
         }
