@@ -18,7 +18,7 @@
 /* ]]> */
 
   //Define your Todo class once on the page
-  var Todo = StackMob.Model.extend({
+  var Recreationsite = StackMob.Model.extend({
     schemaName: 'recreationsite'  //schemaName must be lowercase
   });
   
@@ -153,18 +153,18 @@
 </script>
 -->
 <script type="text/javascript">
-  var todo = new Todo({ action: 'Go back and save Marty!', when: 'back to the future!', priority: 'high' });
-  todo.create({
+  var recreationsite = new Recreationsite({ action: 'Go back and save Marty!', when: 'back to the future!', priority: 'high' });
+  recreationsite.create({
     success: function(model) {
       //Great Scott! We've saved the task to StackMob!  Let's see what we get back.
       console.debug(model.get('action')); //Prints "Go back and save Marty!"
  
       //StackMob auto generates a unique ID for your object
       //after creating it server-side in the format of [schemaName]_id
-      console.debug('ID is: ' + model.get('todo_id'));
+      console.debug('ID is: ' + model.get('recreationsite_id'));
  
       //And let's fetch the task from StackMob again AFTER the object has been saved server side for sake of example.
-      todo.fetch({
+      recreationsite.fetch({
         success: function(model) {
           console.debug(model.toJSON());
         }
