@@ -153,11 +153,11 @@
 </script>
 -->
 <script type="text/javascript">
-  var recreationsite = new Recreationsite({ action: 'Go back and save Marty!', when: 'back to the future!', priority: 'high' });
+  var recreationsite = new Recreationsite({ recreationtest: 'Go back and save Marty!' });
   recreationsite.create({
     success: function(model) {
       //Great Scott! We've saved the task to StackMob!  Let's see what we get back.
-      console.debug(model.get('action')); //Prints "Go back and save Marty!"
+      console.debug(model.get('recreationtest')); //Prints "Go back and save Marty!"
  
       //StackMob auto generates a unique ID for your object
       //after creating it server-side in the format of [schemaName]_id
