@@ -167,7 +167,7 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
       console.debug('ID is: ' + model.get('recreationsite_id'));
  
       //And let's fetch the task from StackMob again AFTER the object has been saved server side for sake of example.
-      recreationsitez.fetch({
+      recreationsite1.fetch({
         success: function(model) {
           console.debug(model.toJSON());
         }
