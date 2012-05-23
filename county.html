@@ -37,23 +37,11 @@
         //var Todos = StackMob.Collection.extend({
         //model: Todo
       //});
+		
+		
 </script>
 
-    
-</head> 
-<body> 
-
-<div data-role="page" data-title="Search Forest by County">
-
-	<div data-role="header" >
-    <a href="index.html" >Back</a>
-		<h1>Coillte Forest</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" >	
-
-<ul data-role="listview" data-inset="true" data-filter="true" class="counties">
-    <script>
+ <script>
 
 
 
@@ -64,7 +52,9 @@
   //smQuery.setRange(0,4); //or add them individually
   
  var sites = new Recreationsites();
-  
+ 
+	
+ 
   sites.query(smQuery, {
     success: function(collection) {
       //print out the todos after the query returns from StackMob
@@ -76,11 +66,7 @@
 		});
   
   
-    var sitesCollectionView = new SitesCollectionView({
-  		collection : sites,
-  		el : $('ul.counties')[0]
-	});
-	SitesCollectionView.render();
+
   
   sites.count(smQuery, {
     success: function(count) {
@@ -97,6 +83,22 @@
     //apply overrides here
 
 </script>
+
+    
+</head> 
+<body> 
+
+<div data-role="page" data-title="Search Forest by County">
+
+	<div data-role="header" >
+    <a href="index.html" >Back</a>
+		<h1>Coillte Forest</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+
+<ul data-role="listview" data-inset="true" data-filter="true" class="counties">
+   <li></li>
 
 </ul>
 	</div><!-- /content -->
