@@ -193,15 +193,15 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
 
   });
   
-  sites.each(function(site) {
-  console.debug(site.get("sitename"));
+  sites.each(function(Recreationsite) {
+  console.debug(Recreationsite.get("sitename"));
 });
   
   
   
   sites.count(smQuery, {
     success: function(count) {
-      //console.debug('count is:' + count );
+      console.debug('count is:' + count );
     }
 	 });
   
