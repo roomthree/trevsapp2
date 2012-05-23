@@ -18,17 +18,18 @@
 /* ]]> */
 
   //Define your Todo class once on the page
-  var Recreationsite = StackMob.Model.extend({
-    schemaName: 'recreationsite'  //schemaName must be lowercase
-  });
   
-  
-    var User = StackMob.Model.extend({
+   var User = StackMob.Model.extend({
     schemaName: 'user'  //schemaName must be lowercase
   });
   
      var Users = StackMob.Collection.extend({
     model: User
+  });
+  
+  
+  var Recreationsite = StackMob.Model.extend({
+    schemaName: 'recreationsite'  //schemaName must be lowercase
   });
   
     var Recreationsites = StackMob.Collection.extend({
@@ -171,11 +172,11 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
 */
 
 
-/*
+
  var smQuery = new StackMob.Collection.Query();
   //get all Todo items of high priority, order by createddate in ascending order.
   //Get the first 5 results.
-  smQuery.equals('county', 'Wicklow').orderAsc('createddate'); //you can chain query parameters
+  smQuery.equals('county', '  Wicklow').orderAsc('createddate'); //you can chain query parameters
   //smQuery.setRange(0,4); //or add them individually
 
 
@@ -188,7 +189,9 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
       console.debug(sites.toJSON());
     }
   });
-  */
+ 
+  
+  /*
   
     var stackmobQuery = new StackMob.Collection.Query();
   stackmobQuery.equals('age', 30);
@@ -199,11 +202,19 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
       //print out the todos after the query returns from StackMob
       console.debug(users.toJSON());
     }
-  }
-			  
-			  
-			  
-			  ); 
+ } ); 
+
+var stackmobQuery = new StackMob.Collection.Query();
+  stackmobQuery.equals('age', 30);
+ 
+  var users = new Users();
+  users.query(stackmobQuery,{
+    success: function(collection) {
+      //print out the todos after the query returns from StackMob
+      console.debug(users.toJSON());
+    }
+  } ); 
+  */
   
   
   //fetch all users whose age is 25
