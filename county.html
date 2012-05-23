@@ -63,7 +63,7 @@ $( '#indexPage' ).live( 'pageinit',function(event){
 
 	  	// Gets all sitenames
   		sites.each(function(Recreationsite) {
-  			buttonHtmlString += '<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + Recreationsite.get("num_car_spaces ") + '</span></a></li>';
+  			buttonHtmlString += '<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + Recreationsite.get("num_car_spaces") + '</span></a></li>';
 		});
 		console.debug(buttonHtmlString);
 		$("#counties").append(buttonHtmlString);
