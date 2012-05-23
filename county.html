@@ -75,11 +75,14 @@
     success: function(collection) {
       //print out the todos after the query returns from StackMob
      // console.debug(sites.toJSON());
-	  
+	  var buttonHtmlString = "", pageHtmlString = "";
+
 	  	// Gets all sitenames
   		sites.each(function(Recreationsite) {
-  			document.write('<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + 12 + '</span></a></li>');
+  			buttonHtmlString+='<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + 12 + '</span></a></li>';
 		});
+		
+		$("#counties").append(buttonHtmlString);
   
   
 
