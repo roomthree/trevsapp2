@@ -43,7 +43,7 @@
 
   <script>
 
- $(document).ready(function() {
+$('div:jqmData(role="page")').live('pagebeforeshow',function(){
 
  var smQuery = new StackMob.Collection.Query();
   //get all Todo items of high priority, order by createddate in ascending order.
@@ -105,6 +105,8 @@
 
 
 </ul>
+
+
 	</div><!-- /content -->
 
 </div><!-- /page -->
