@@ -168,11 +168,11 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
 
 
 
-  var todos = new Recreationsites();
-  todos.fetch({
+  var sites = new Recreationsites();
+  sites.fetch({
     success: function(collection) {
       //after we've gotten all the Todo items from StackMob, let's see what we have!
-      console.debug(todos.toJSON());
+      console.debug(sites.toJSON());
     }
   });
 
