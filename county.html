@@ -63,9 +63,9 @@
 
 	  	// Gets all sitenames
   		sites.each(function(Recreationsite) {
-  			buttonHtmlString+='<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + 12 + '</span></a></li>';
+  			buttonHtmlString += '<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + 12 + '</span></a></li>';
 		});
-		
+		console.debug(buttonHtmlString);
 		$("#counties").append(buttonHtmlString);
   
   
