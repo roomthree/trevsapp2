@@ -187,9 +187,11 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
     success: function(collection) {
       //print out the todos after the query returns from StackMob
       console.debug(sites.toJSON());
-  sites.each(function(Recreationsite) {
-  console.debug(Recreationsite.get("sitename"));
-});
+	  
+	  	// Gets all sitenames
+  		sites.each(function(Recreationsite) {
+  			document.write("<li>" + Recreationsite.get("sitename") + "</li>");
+		});
   
   
   
