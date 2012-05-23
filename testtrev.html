@@ -186,13 +186,7 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
   sites.query(smQuery, {
     success: function(collection) {
       //print out the todos after the query returns from StackMob
-      //console.debug(sites.toJSON());
-	  
-	  //document.write(sites.toJSON())
-    }
-
-  });
-  
+      console.debug(sites.toJSON());
   sites.each(function(Recreationsite) {
   console.debug(Recreationsite.get("sitename"));
 });
@@ -203,7 +197,13 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
     success: function(count) {
       console.debug('count is:' + count );
     }
-	 });
+	 });	  
+	  //document.write(sites.toJSON())
+    }
+
+  });
+  
+
   
   //fetch all users whose age is 25
 /*
