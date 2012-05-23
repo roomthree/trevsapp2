@@ -2,10 +2,7 @@
 <html> 
 	<head> 
 	<title>Coillte App</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
     
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://static.stackmob.com/js/json2-min.js"></script>
@@ -13,7 +10,17 @@
     <script type="text/javascript" src="http://static.stackmob.com/js/stackmob-js-0.2.1-min.js"></script>
     <script type="text/javascript" src="http://static.stackmob.com/js/backbone-0.9.2-min.js"></script>    
     
-	<script type="text/javascript">
+    	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    
+
+    <script>
+
+$(document).bind("mobileinit", function(){
+
+
     /* <![CDATA[ */
       //Remember to initialize StackMob before you use other StackMob functionality.
         StackMob.init({
@@ -22,9 +29,9 @@
         apiVersion: 0
       });
     /* ]]> */
-    
+     </script>
       
-      
+      <script>
       var Recreationsite = StackMob.Model.extend({
         schemaName: 'recreationsite'  //schemaName must be lowercase
       });
@@ -35,25 +42,6 @@
         //var Todos = StackMob.Collection.extend({
         //model: Todo
       //});
-    </script>
-    
-    
-</head> 
-<body> 
-
-<div data-role="page" data-title="Search Forest by County">
-
-	<div data-role="header" >
-    <a href="index.html" >Back</a>
-		<h1>Coillte Forest</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" >	
-
-<ul data-role="listview" data-inset="true" data-filter="true">
-
-<script>
-
 
  var smQuery = new StackMob.Collection.Query();
   //get all Todo items of high priority, order by createddate in ascending order.
@@ -66,52 +54,45 @@
   sites.query(smQuery, {
     success: function(collection) {
       //print out the todos after the query returns from StackMob
-      console.debug(sites.toJSON());
+     // console.debug(sites.toJSON());
 	  
 	  	// Gets all sitenames
   		sites.each(function(Recreationsite) {
-  			document.write('<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + 12 + '</span></a></li>');
+  			//document.write('<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + 12 + '</span></a></li>');
 		});
   
   
   
   sites.count(smQuery, {
     success: function(count) {
-      console.debug('count is:' + count );
+     //console.debug('count is:' + count );
     }
 	 });	  
 	  //document.write(sites.toJSON())
     }
 
   });
+  
+  
+    //apply overrides here
+});
 </script>
+    
+</head> 
+<body> 
 
-<li><a href="#">Carlow<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Cavan<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Clare<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Cork<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Donegal<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Dublin<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Galway<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Kerry<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Kildare<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Kilkenny<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Laois<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Leitrim<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Limerick<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Longford<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Louth<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Mayo<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Meath<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Monaghan<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Offaly<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Roscommon<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Sligo<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Tipperary<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Waterford<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Westmeath<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Wexford<span class="ui-li-count">12</span></a></li>
-<li><a href="#">Wicklow<span class="ui-li-count">12</span></a></li>
+<div data-role="page" data-title="Search Forest by County">
+
+	<div data-role="header" >
+    <a href="file:///C|/Users/trevor.ROOMTHREE/Desktop/college/CA2/version01/index.html" >Back</a>
+		<h1>Coillte Forest</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+
+<ul data-role="listview" data-inset="true" data-filter="true">
+
+
 
 </ul>
 	</div><!-- /content -->
