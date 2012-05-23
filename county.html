@@ -67,7 +67,9 @@ $( '#indexPage' ).live( 'pageinit',function(event){
 		});
 		console.debug(buttonHtmlString);
 		$("#counties").append(buttonHtmlString);
-  
+  	$('ul').listview('refresh');
+
+
   
 
   
@@ -99,8 +101,8 @@ $( '#indexPage' ).live( 'pageinit',function(event){
 
 	<div data-role="content" >	
 
-<ul data-role="listview" data-inset="true" data-filter="true" >
-  <li id="counties"></li>
+<ul data-role="listview" data-inset="true" data-filter="true" id="counties">
+  
   
 
 
