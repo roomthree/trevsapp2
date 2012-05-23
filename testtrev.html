@@ -188,13 +188,17 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
       //print out the todos after the query returns from StackMob
       console.debug(sites.toJSON());
     }
+	
+	
+	
   });
   
   
-  sites.count(q, {
+  sites.count(smQuery, {
     success: function(count) {
       console.log('count is:' + count );
     }
+	 });
   
   //fetch all users whose age is 25
 /*
