@@ -187,12 +187,16 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
     success: function(collection) {
       //print out the todos after the query returns from StackMob
       //console.debug(sites.toJSON());
-	  document.write(sites.toJSON())
+	  
+	  //document.write(sites.toJSON())
     }
-	
-	
-	
+
   });
+  
+  sites.each(function(site) {
+  document.write(donut.get("sitename"));
+});
+  
   
   
   sites.count(smQuery, {
