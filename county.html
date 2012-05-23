@@ -46,7 +46,7 @@
 </head> 
 <body> 
 
-<div data-role="page" data-title="Search Forest by County">
+<div data-role="page" id="indexPage" data-title="Search Forest by County">
 
 	<div data-role="header" >
     <a href="index.html" >Back</a>
@@ -56,9 +56,10 @@
 	<div data-role="content" >	
 
 <ul data-role="listview" data-inset="true" data-filter="true" class="counties">
+  
    <script>
 
-$(document).ready(function() {
+ $("#indexPage").live('pageinit', function() {
 
  var smQuery = new StackMob.Collection.Query();
   //get all Todo items of high priority, order by createddate in ascending order.
@@ -77,7 +78,7 @@ $(document).ready(function() {
 	  
 	  	// Gets all sitenames
   		sites.each(function(Recreationsite) {
-  			document.write('<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + 12 + '</span></a></li>');
+  			//document.write('<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + 12 + '</span></a></li>');
 		});
   
   
