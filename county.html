@@ -46,13 +46,13 @@
 <div data-role="page" data-title="Search Forest by County">
 
 	<div data-role="header" >
-    <a href="file:///C|/Users/trevor.ROOMTHREE/Desktop/college/CA2/version01/index.html" >Back</a>
+    <a href="index.html" >Back</a>
 		<h1>Coillte Forest</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" >	
 
-<ul data-role="listview" data-inset="true" data-filter="true">
+<ul data-role="listview" data-inset="true" data-filter="true" class="counties">
     <script>
 
 
@@ -76,6 +76,11 @@
 		});
   
   
+    var sitesCollectionView = new SitesCollectionView({
+  		collection : sites,
+  		el : $('ul.counties')[0]
+	});
+	SitesCollectionView.render();
   
   sites.count(smQuery, {
     success: function(count) {
@@ -87,6 +92,7 @@
 
   });
   
+
   
     //apply overrides here
 
