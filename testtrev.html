@@ -164,17 +164,29 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
 
 
 
-
+ var smQuery = new StackMob.Collection.Query();
+  //get all Todo items of high priority, order by createddate in ascending order.
+  //Get the first 5 results.
+  smQuery.equals('county', 'Carlow').orderAsc('createddate'); //you can chain query parameters
+  smQuery.setRange(0,4); //or add them individually
 
 
 
   var sites = new Recreationsites();
+  
+  sites.query(smQuery, {
+    success: function(collection) {
+      //print out the todos after the query returns from StackMob
+      console.debug(sites.toJSON());
+    }
+  });
+  /*
   sites.fetch({
     success: function(collection) {
       //after we've gotten all the Todo items from StackMob, let's see what we have!
       console.debug(sites.toJSON());
     }
-  });
+  });*/
 
 
 
