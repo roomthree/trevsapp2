@@ -23,8 +23,12 @@
   });
   
   
+    var Recreationsite = StackMob.Model.extend({
+    schemaName: 'recreationsite'  //schemaName must be lowercase
+  });
+  
      var Users = StackMob.Collection.extend({
-    model: Users
+    model: User
   });
   
     var Recreationsites = StackMob.Collection.extend({
