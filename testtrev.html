@@ -186,7 +186,8 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
   sites.query(smQuery, {
     success: function(collection) {
       //print out the todos after the query returns from StackMob
-      console.debug(sites.toJSON());
+      //console.debug(sites.toJSON());
+	  document.write(sites.toJSON())
     }
 	
 	
@@ -196,7 +197,7 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
   
   sites.count(smQuery, {
     success: function(count) {
-      console.debug('count is:' + count );
+      //console.debug('count is:' + count );
     }
 	 });
   
