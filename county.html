@@ -41,25 +41,9 @@
 		
 </script>
 
- 
-    
-</head> 
-<body> 
+  <script>
 
-<div data-role="page" id="indexPage" data-title="Search Forest by County">
-
-	<div data-role="header" >
-    <a href="index.html" >Back</a>
-		<h1>Coillte Forest</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" >	
-
-<ul data-role="listview" data-inset="true" data-filter="true" class="counties">
-  
-   <script>
-
- $("#indexPage").live('pageinit', function() {
+ $(document).ready(function() {
 
  var smQuery = new StackMob.Collection.Query();
   //get all Todo items of high priority, order by createddate in ascending order.
@@ -102,6 +86,22 @@
     //apply overrides here
 
 </script>
+    
+</head> 
+<body> 
+
+<div data-role="page" id="indexPage" data-title="Search Forest by County">
+
+	<div data-role="header" >
+    <a href="index.html" >Back</a>
+		<h1>Coillte Forest</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+
+<ul data-role="listview" data-inset="true" data-filter="true" class="counties">
+  
+  
 
 
 </ul>
