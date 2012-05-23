@@ -190,6 +190,12 @@ var  recreationsite1 = new Recreationsite({ sitename: ' Kilbrannish', contactema
     }
   });
   
+  
+  sites.count(q, {
+    success: function(count) {
+      console.log('count is:' + count );
+    }
+  
   //fetch all users whose age is 25
 /*
 var sites = new Recreationsites();
