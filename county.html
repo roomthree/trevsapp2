@@ -80,118 +80,176 @@ $( '#indexPage' ).live( 'pageinit',function(event){
  var smQueryWicklow= new StackMob.Collection.Query();
 
 
-smQueryAntrim.equals('county', 'Antrim').orderAsc('sitename');
-smQueryArmagh.equals('county', 'Armagh').orderAsc('sitename');
-smQueryCarlow.equals('county', 'Carlow').orderAsc('sitename');
-smQueryCavan.equals('county', 'Cavan').orderAsc('sitename');
-smQueryClare.equals('county', 'Clare').orderAsc('sitename');
-smQueryCork.equals('county', 'Cork').orderAsc('sitename');
-smQueryDerry.equals('county', 'Derry').orderAsc('sitename');
-smQueryDonegal.equals('county', 'Donegal').orderAsc('sitename');
-smQueryDown.equals('county', 'Down').orderAsc('sitename');
-smQueryDublin.equals('county', 'Dublin').orderAsc('sitename');
-smQueryFermanagh.equals('county', 'Fermanagh').orderAsc('sitename');
-smQueryGalway.equals('county', 'Galway').orderAsc('sitename');
-smQueryKerry.equals('county', 'Kerry').orderAsc('sitename');
-smQueryKildare.equals('county', 'Kildare').orderAsc('sitename');
-smQueryKilkenny.equals('county', 'Kilkenny').orderAsc('sitename');
-smQueryLaois.equals('county', 'Laois').orderAsc('sitename');
-smQueryLeitrim.equals('county', 'Leitrim').orderAsc('sitename');
-smQueryLimerick.equals('county', 'Limerick').orderAsc('sitename');
-smQueryLongford.equals('county', 'Longford').orderAsc('sitename');
-smQueryLouth.equals('county', 'Louth').orderAsc('sitename');
-smQueryMayo.equals('county', 'Mayo').orderAsc('sitename');
-smQueryMeath.equals('county', 'Meath').orderAsc('sitename');
-smQueryMonaghan.equals('county', 'Monaghan').orderAsc('sitename');
-smQueryOffaly.equals('county', 'Offaly').orderAsc('sitename');
-smQueryRoscommon.equals('county', 'Roscommon').orderAsc('sitename');
-smQuerySligo.equals('county', 'Sligo').orderAsc('sitename');
-smQueryTipperary.equals('county', 'Tipperary').orderAsc('sitename');
-smQueryTyrone.equals('county', 'Tyrone').orderAsc('sitename');
-smQueryWaterford.equals('county', 'Waterford').orderAsc('sitename');
-smQueryWestmeath.equals('county', 'Westmeath').orderAsc('sitename');
-smQueryWexford.equals('county', 'Wexford').orderAsc('sitename');
-smQueryWicklow.equals('county', 'Wicklow').orderAsc('sitename');
+smQueryAntrim.equals('county', 'Antrim').orderAsc('createddate');
+smQueryArmagh.equals('county', 'Armagh').orderAsc('createddate');
+smQueryCarlow.equals('county', 'Carlow').orderAsc('createddate');
+smQueryCavan.equals('county', 'Cavan').orderAsc('createddate');
+smQueryClare.equals('county', 'Clare').orderAsc('createddate');
+smQueryCork.equals('county', 'Cork').orderAsc('createddate');
+smQueryDerry.equals('county', 'Derry').orderAsc('createddate');
+smQueryDonegal.equals('county', 'Donegal').orderAsc('createddate');
+smQueryDown.equals('county', 'Down').orderAsc('createddate');
+smQueryDublin.equals('county', 'Dublin').orderAsc('createddate');
+smQueryFermanagh.equals('county', 'Fermanagh').orderAsc('createddate');
+smQueryGalway.equals('county', 'Galway').orderAsc('createddate');
+smQueryKerry.equals('county', 'Kerry').orderAsc('createddate');
+smQueryKildare.equals('county', 'Kildare').orderAsc('createddate');
+smQueryKilkenny.equals('county', 'Kilkenny').orderAsc('createddate');
+smQueryLaois.equals('county', 'Laois').orderAsc('createddate');
+smQueryLeitrim.equals('county', 'Leitrim').orderAsc('createddate');
+smQueryLimerick.equals('county', 'Limerick').orderAsc('createddate');
+smQueryLongford.equals('county', 'Longford').orderAsc('createddate');
+smQueryLouth.equals('county', 'Louth').orderAsc('createddate');
+smQueryMayo.equals('county', 'Mayo').orderAsc('createddate');
+smQueryMeath.equals('county', 'Meath').orderAsc('createddate');
+smQueryMonaghan.equals('county', 'Monaghan').orderAsc('createddate');
+smQueryOffaly.equals('county', 'Offaly').orderAsc('createddate');
+smQueryRoscommon.equals('county', 'Roscommon').orderAsc('createddate');
+smQuerySligo.equals('county', 'Sligo').orderAsc('createddate');
+smQueryTipperary.equals('county', 'Tipperary').orderAsc('createddate');
+smQueryTyrone.equals('county', 'Tyrone').orderAsc('createddate');
+smQueryWaterford.equals('county', 'Waterford').orderAsc('createddate');
+smQueryWestmeath.equals('county', 'Westmeath').orderAsc('createddate');
+smQueryWexford.equals('county', 'Wexford').orderAsc('createddate');
+smQueryWicklow.equals('county', 'Wicklow').orderAsc('createddate');
 
 
- var sitesAntrim= new Recreationsites();
- var sitesArmagh= new Recreationsites();
- var sitesCarlow= new Recreationsites();
- var sitesCavan= new Recreationsites();
- var sitesClare= new Recreationsites();
- var sitesCork= new Recreationsites();
- var sitesDerry= new Recreationsites();
- var sitesDonegal= new Recreationsites();
- var sitesDown= new Recreationsites();
- var sitesDublin= new Recreationsites();
- var sitesFermanagh= new Recreationsites();
- var sitesGalway= new Recreationsites();
- var sitesKerry= new Recreationsites();
- var sitesKildare= new Recreationsites();
- var sitesKilkenny= new Recreationsites();
- var sitesLaois= new Recreationsites();
- var sitesLeitrim= new Recreationsites();
- var sitesLimerick= new Recreationsites();
- var sitesLongford= new Recreationsites();
- var sitesLouth= new Recreationsites();
- var sitesMayo= new Recreationsites();
- var sitesMeath= new Recreationsites();
- var sitesMonaghan= new Recreationsites();
- var sitesOffaly= new Recreationsites();
- var sitesRoscommon= new Recreationsites();
- var sitesSligo= new Recreationsites();
- var sitesTipperary= new Recreationsites();
- var sitesTyrone= new Recreationsites();
- var sitesWaterford= new Recreationsites();
- var sitesWestmeath= new Recreationsites();
- var sitesWexford= new Recreationsites();
- var sitesWicklow= new Recreationsites();
+
+sitesAntrim.count(smQueryAntrim, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesArmagh.count(smQueryArmagh, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesCarlow.count(smQueryCarlow, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesCavan.count(smQueryCavan, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesClare.count(smQueryClare, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesCork.count(smQueryCork, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesDerry.count(smQueryDerry, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesDonegal.count(smQueryDonegal, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesDown.count(smQueryDown, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesDublin.count(smQueryDublin, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesFermanagh.count(smQueryFermanagh, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesGalway.count(smQueryGalway, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesKerry.count(smQueryKerry, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesKildare.count(smQueryKildare, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesKilkenny.count(smQueryKilkenny, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesLaois.count(smQueryLaois, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesLeitrim.count(smQueryLeitrim, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesLimerick.count(smQueryLimerick, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesLongford.count(smQueryLongford, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesLouth.count(smQueryLouth, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesMayo.count(smQueryMayo, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesMeath.count(smQueryMeath, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesMonaghan.count(smQueryMonaghan, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesOffaly.count(smQueryOffaly, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesRoscommon.count(smQueryRoscommon, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesSligo.count(smQuerySligo, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesTipperary.count(smQueryTipperary, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesTyrone.count(smQueryTyrone, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesWaterford.count(smQueryWaterford, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesWestmeath.count(smQueryWestmeath, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesWexford.count(smQueryWexford, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+sitesWicklow.count(smQueryWicklow, { success: function(count) { 
+ //console.debug('count is:' + count );
+ }});
+
+
+
+ var sites = new Recreationsites();
  
+	
  
-var  buttonHtmlString = "";
+  sites.query(smQuery, {
+    success: function(collection) {
+      //print out the todos after the query returns from StackMob
+     // console.debug(sites.toJSON());
+	  var buttonHtmlString = "", pageHtmlString = "";
 
-sitesAntrim.query(smQueryAntrim, { 
-				  success: function(collection) 
-				  {  buttonHtmlString = "";
-				  	sitesAntrim.count(smQueryAntrim, {success: function(count) {  
-																		buttonHtmlString += '<li><a href="#">' + 'Antrim'+ '<span class="ui-li-count">' + count + '</span></a></li>';
-																		}});
-					console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
+	  	// Gets all sitenames
+  		sites.each(function(Recreationsite) {
+  			buttonHtmlString += '<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + Recreationsite.get("num_car_spaces") + '</span></a></li>';
+		});
+		console.debug(buttonHtmlString);
+		$("#counties").append(buttonHtmlString);
+  	$('ul').listview('refresh');
 
-sitesArmagh.query(smQueryArmagh, { success: function(collection) {  buttonHtmlString = "";sitesArmagh.count(smQueryArmagh,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Armagh'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesCarlow.query(smQueryCarlow, { success: function(collection) {  buttonHtmlString = "";sitesCarlow.count(smQueryCarlow,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Carlow'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesCavan.query(smQueryCavan, { success: function(collection) {  buttonHtmlString = "";sitesCavan.count(smQueryCavan,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Cavan'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesClare.query(smQueryClare, { success: function(collection) {  buttonHtmlString = "";sitesClare.count(smQueryClare,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Clare'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesCork.query(smQueryCork, { success: function(collection) {  buttonHtmlString = "";sitesCork.count(smQueryCork,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Cork'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesDerry.query(smQueryDerry, { success: function(collection) {  buttonHtmlString = "";sitesDerry.count(smQueryDerry,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Derry'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesDonegal.query(smQueryDonegal, { success: function(collection) {  buttonHtmlString = "";sitesDonegal.count(smQueryDonegal,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Donegal'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesDown.query(smQueryDown, { success: function(collection) {  buttonHtmlString = "";sitesDown.count(smQueryDown,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Down'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesDublin.query(smQueryDublin, { success: function(collection) {  buttonHtmlString = "";sitesDublin.count(smQueryDublin,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Dublin'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesFermanagh.query(smQueryFermanagh, { success: function(collection) {  buttonHtmlString = "";sitesFermanagh.count(smQueryFermanagh,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Fermanagh'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesGalway.query(smQueryGalway, { success: function(collection) {  buttonHtmlString = "";sitesGalway.count(smQueryGalway,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Galway'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesKerry.query(smQueryKerry, { success: function(collection) {  buttonHtmlString = "";sitesKerry.count(smQueryKerry,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Kerry'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesKildare.query(smQueryKildare, { success: function(collection) {  buttonHtmlString = "";sitesKildare.count(smQueryKildare,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Kildare'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesKilkenny.query(smQueryKilkenny, { success: function(collection) {  buttonHtmlString = "";sitesKilkenny.count(smQueryKilkenny,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Kilkenny'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesLaois.query(smQueryLaois, { success: function(collection) {  buttonHtmlString = "";sitesLaois.count(smQueryLaois,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Laois'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesLeitrim.query(smQueryLeitrim, { success: function(collection) {  buttonHtmlString = "";sitesLeitrim.count(smQueryLeitrim,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Leitrim'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesLimerick.query(smQueryLimerick, { success: function(collection) {  buttonHtmlString = "";sitesLimerick.count(smQueryLimerick,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Limerick'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesLongford.query(smQueryLongford, { success: function(collection) {  buttonHtmlString = "";sitesLongford.count(smQueryLongford,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Longford'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesLouth.query(smQueryLouth, { success: function(collection) {  buttonHtmlString = "";sitesLouth.count(smQueryLouth,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Louth'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesMayo.query(smQueryMayo, { success: function(collection) {  buttonHtmlString = "";sitesMayo.count(smQueryMayo,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Mayo'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesMeath.query(smQueryMeath, { success: function(collection) {  buttonHtmlString = "";sitesMeath.count(smQueryMeath,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Meath'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesMonaghan.query(smQueryMonaghan, { success: function(collection) {  buttonHtmlString = "";sitesMonaghan.count(smQueryMonaghan,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Monaghan'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesOffaly.query(smQueryOffaly, { success: function(collection) {  buttonHtmlString = "";sitesOffaly.count(smQueryOffaly,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Offaly'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesRoscommon.query(smQueryRoscommon, { success: function(collection) {  buttonHtmlString = "";sitesRoscommon.count(smQueryRoscommon,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Roscommon'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesSligo.query(smQuerySligo, { success: function(collection) {  buttonHtmlString = "";sitesSligo.count(smQuerySligo,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Sligo'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesTipperary.query(smQueryTipperary, { success: function(collection) {  buttonHtmlString = "";sitesTipperary.count(smQueryTipperary,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Tipperary'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesTyrone.query(smQueryTyrone, { success: function(collection) {  buttonHtmlString = "";sitesTyrone.count(smQueryTyrone,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Tyrone'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesWaterford.query(smQueryWaterford, { success: function(collection) {  buttonHtmlString = "";sitesWaterford.count(smQueryWaterford,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Waterford'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesWestmeath.query(smQueryWestmeath, { success: function(collection) {  buttonHtmlString = "";sitesWestmeath.count(smQueryWestmeath,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Westmeath'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesWexford.query(smQueryWexford, { success: function(collection) {  buttonHtmlString = "";sitesWexford.count(smQueryWexford,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Wexford'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
-sitesWicklow.query(smQueryWicklow, { success: function(collection) {  buttonHtmlString = "";sitesWicklow.count(smQueryWicklow,{success: function(count) {   buttonHtmlString += '<li><a href="#">' + 'Wicklow'+ '<span class="ui-li-count">' + count + '</span></a></li>';}}); console.debug(buttonHtmlString); $("#counties").append(buttonHtmlString);$('ul').listview('refresh');}});
 
-											});
-											
+  
+
+  
+  sites.count(smQuery, {
+    success: function(count) {
+     
+    }
+	 });	  
+	  //document.write(sites.toJSON())
+    }
+
+  });
+  
+ });
+  
+    //apply overrides here
+
 </script>
     
 </head> 
@@ -208,6 +266,38 @@ sitesWicklow.query(smQueryWicklow, { success: function(collection) {  buttonHtml
 
 <ul data-role="listview" data-inset="true" data-filter="true" id="counties">
   
+<li><a href="#">Antrim</a></li>
+<li><a href="#">Armagh</a></li>
+<li><a href="#">Carlow</a></li>
+<li><a href="#">Cavan</a></li>
+<li><a href="#">Clare</a></li>
+<li><a href="#">Cork</a></li>
+<li><a href="#">Derry</a></li>
+<li><a href="#">Donegal</a></li>
+<li><a href="#">Down</a></li>
+<li><a href="#">Dublin</a></li>
+<li><a href="#">Fermanagh</a></li>
+<li><a href="#">Galway</a></li>
+<li><a href="#">Kerry</a></li>
+<li><a href="#">Kildare</a></li>
+<li><a href="#">Kilkenny</a></li>
+<li><a href="#">Laois</a></li>
+<li><a href="#">Leitrim</a></li>
+<li><a href="#">Limerick</a></li>
+<li><a href="#">Longford</a></li>
+<li><a href="#">Louth</a></li>
+<li><a href="#">Mayo</a></li>
+<li><a href="#">Meath</a></li>
+<li><a href="#">Monaghan</a></li>
+<li><a href="#">Offaly</a></li>
+<li><a href="#">Roscommon</a></li>
+<li><a href="#">Sligo</a></li>
+<li><a href="#">Tipperary</a></li>
+<li><a href="#">Tyrone</a></li>
+<li><a href="#">Waterford</a></li>
+<li><a href="#">Westmeath</a></li>
+<li><a href="#">Wexford</a></li>
+<li><a href="#">Wicklow</a></li>
 
 </ul>
 
