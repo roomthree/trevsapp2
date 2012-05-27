@@ -148,103 +148,171 @@ smQueryWicklow.equals('county', 'Wicklow').orderAsc('createddate');
  var sitesWicklow= new Recreationsites();
 
 
+	var buttonHtmlString = "";
+  			
 
 sitesAntrim.count(smQueryAntrim, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Antrim<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesArmagh.count(smQueryArmagh, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Armagh<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesCarlow.count(smQueryCarlow, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Carlow<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesCavan.count(smQueryCavan, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Cavan<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesClare.count(smQueryClare, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Clare<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesCork.count(smQueryCork, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Cork<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesDerry.count(smQueryDerry, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Derry<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesDonegal.count(smQueryDonegal, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Donegal<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesDown.count(smQueryDown, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Down<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesDublin.count(smQueryDublin, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Dublin<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesFermanagh.count(smQueryFermanagh, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Fermanagh<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesGalway.count(smQueryGalway, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Galway<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesKerry.count(smQueryKerry, { success: function(count) { 
- //console.debug('count is:' + count );
+ 	buttonHtmlString += '<li><a href="#">Kerry<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesKildare.count(smQueryKildare, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Kildare<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesKilkenny.count(smQueryKilkenny, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Kilkenny<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesLaois.count(smQueryLaois, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Laois<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesLeitrim.count(smQueryLeitrim, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Leitrim<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesLimerick.count(smQueryLimerick, { success: function(count) { 
- //console.debug('count is:' + count );
+ 	buttonHtmlString += '<li><a href="#">Limerick<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesLongford.count(smQueryLongford, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">longford<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesLouth.count(smQueryLouth, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Louth<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesMayo.count(smQueryMayo, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Mayo<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesMeath.count(smQueryMeath, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Meath<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesMonaghan.count(smQueryMonaghan, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Monaghan<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesOffaly.count(smQueryOffaly, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Offaly<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesRoscommon.count(smQueryRoscommon, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Roscommon<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesSligo.count(smQuerySligo, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Sligo<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesTipperary.count(smQueryTipperary, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Tipperary<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesTyrone.count(smQueryTyrone, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Tyrone<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesWaterford.count(smQueryWaterford, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Waterford<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesWestmeath.count(smQueryWestmeath, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Westmeath<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesWexford.count(smQueryWexford, { success: function(count) { 
- //console.debug('count is:' + count );
+	buttonHtmlString += '<li><a href="#">Wexford<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
  }});
 sitesWicklow.count(smQueryWicklow, { success: function(count) { 
- //console.debug('count is:' + count );
- }});
+	buttonHtmlString += '<li><a href="#">Wicklow<span class="ui-li-count">' + count + '</span></a></li>';
+	$("#counties").append(buttonHtmlString);
+	$('ul').listview('refresh');
+}});
+
+
 
 
 
@@ -260,7 +328,9 @@ sitesWicklow.count(smQueryWicklow, { success: function(count) {
 
 	  	// Gets all sitenames
   		sites.each(function(Recreationsite) {
+							var buttonHtmlString = "";
   			buttonHtmlString += '<li><a href="#">' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + Recreationsite.get("num_car_spaces") + '</span></a></li>';
+		$("#counties").append(buttonHtmlString);
 		});
 		console.debug(buttonHtmlString);
 		$("#counties").append(buttonHtmlString);
