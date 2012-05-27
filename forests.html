@@ -50,7 +50,7 @@ $( '#indexPage' ).live( 'pageinit',function(event){
   smQuery.orderAsc('sitename');
    smQuery.select('sitename');
   //users.query(smQuery);
-  //smQuery.equals('county', 'Wicklow').orderAsc('sitename'); //you can chain query parameters
+  smQuery.notequals('county', 'test').orderAsc('sitename'); //you can chain query parameters
   //Get the first 5 results.
   //smQuery.setRange(0,4); //or add them individually
   
