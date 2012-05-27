@@ -45,7 +45,7 @@ $( '#indexPage' ).live( 'pageinit',function(event){
  var smQuery = new StackMob.Collection.Query();
   //get all Todo items of high priority, order by createddate in ascending order.
   //Get the first 5 results.
-  smQuery.equals('county', 'Wicklow').orderAsc('sitename'); //you can chain query parameters
+  smQuery.equals('county', 'Wicklow').orderAsc('createddate'); //you can chain query parameters
   //smQuery.setRange(0,4); //or add them individually
   
  var sites = new Recreationsites();
