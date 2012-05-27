@@ -50,7 +50,9 @@ $( '#indexPage' ).live( 'pageinit',function(event){
   //smQuery.orderAsc('sitename');
    //smQuery.select('sitename');
   //users.query(smQuery);
-  smQuery.notEquals('county', 'test').orderAsc('sitename'); //you can chain query parameters
+  var countyparam = getUrlVars()["county"];
+  
+  smQuery.equals('county', countyparam).orderAsc('sitename'); //you can chain query parameters
   //Get the first 5 results.
   //smQuery.setRange(0,4); //or add them individually
   
@@ -77,7 +79,7 @@ $( '#indexPage' ).live( 'pageinit',function(event){
 
   
   sites.count(smQuery, {
-    success: function(count) {
+    success: function(count) {//console.debug('count is:' + count );
      //console.debug('count is:' + count );
     }
 	 });	  
