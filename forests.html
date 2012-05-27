@@ -66,7 +66,7 @@ $( '#indexPage' ).live( 'pageinit',function(event){
 
 	  	// Gets all sitenames
   		sites.each(function(Recreationsite) {
-  			buttonHtmlString += '<li><a href="#"><img src="http://jquerymobile.com/demos/1.1.0/docs/lists/images/album-bb.jpg" />' + Recreationsite.get("sitename") + '<span class="ui-li-count">' + Recreationsite.get("num_car_spaces") + '</span></a></li>';
+  			buttonHtmlString += '<li><a href="#"><img src="http://jquerymobile.com/demos/1.1.0/docs/lists/images/album-bb.jpg" />' + Recreationsite.get("sitename") + '</a></li>';
 		});
 		console.debug(buttonHtmlString);
 		$("#counties").append(buttonHtmlString);
