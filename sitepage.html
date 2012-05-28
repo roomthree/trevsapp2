@@ -19,6 +19,30 @@
 <div data-role="page" data-title="Site Page" id="sitepage">
 <script>
 
+    /* <![CDATA[ */
+      //Remember to initialize StackMob before you use other StackMob functionality.
+        StackMob.init({
+        appName: "trevsapp2",
+        clientSubdomain: "trevorclowry",
+        apiVersion: 0
+      });
+    /* ]]> */
+
+      var Recreationsite = StackMob.Model.extend({
+        schemaName: 'recreationsite'  //schemaName must be lowercase
+      });
+      
+        var Recreationsites = StackMob.Collection.extend({
+        model: Recreationsite
+      });
+        //var Todos = StackMob.Collection.extend({
+        //model: Todo
+      //});
+		
+		
+</script>
+<script>
+
 function getUrlVars()
 {
     var vars = [], hash;
@@ -42,12 +66,14 @@ var siteparam = getUrlVars()["recreationsite_id"];
   smQuery.equals('recreationsite_id', 'siteparam').orderAsc('createddate'); //you can chain query parameters
   //smQuery.setRange(0,4); //or add them individually
   
-   var siteinfo = new Recreationsites();
-  siteinfo.query(smQuery, {
+   var siteinfo = new Recreationsite();
+   
+  siteinfo.fetch( {
+				 
     success: function(collection) {
 		
 		siteinfolistString =""; 
-		siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ siteinfo.get("sitename") + '</a></li>'; 
+		siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ collection.get("sitename") + '</a></li>'; 
 		$("#siteinfolist").append(siteinfolistString); 
 		$('ul').listview('refresh'); 
 		
