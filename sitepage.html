@@ -76,6 +76,37 @@ var siteparam = getUrlVars()["siteid"];
 		siteinfo.each(function(Recreationsitez) {
 			siteinfolistString =""; 
 			siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('sitename') + '</a></li>'; 
+			siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('recreationsite_id') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('createddate') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('county') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('sitename') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('lastmoddate') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('activities') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('car_park_closes') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('car_park_opens') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('contact_name') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('contact_phone') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('contactemail') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('details') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('direction') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('download_map') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('features') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('googlemap') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('grid_ref') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('image') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('location') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('num_car_spaces') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('os_map') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('parking_fee') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('parking_options') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('site_map_x') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('site_map_y') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('site_map_zoom') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('trails') + '</a></li>'; 
+siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ Recreationsitez.get('trails_map') + '</a></li>'; 
+
+			
+			
 			console.debug(siteinfo.toJSON());
 			$("#siteinfolist").append(siteinfolistString); 
 			$('ul').listview('refresh'); 
