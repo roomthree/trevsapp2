@@ -48,6 +48,54 @@ function getUrlVars()
     return vars;
 }
 
+function getforestlist()
+{
+
+var smQuery = new StackMob.Collection.Query();
+  //get all Todo items of high priority, order by createddate in ascending order.
+  //smQuery.orderAsc('sitename');
+   //smQuery.select('sitename');
+  //users.query(smQuery);
+  var countyparam = getUrlVars()["county"];
+  
+  smQuery.equals('county', countyparam).orderAsc('sitename'); //you can chain query parameters
+  //Get the first 5 results.
+  //smQuery.setRange(0,4); //or add them individually
+  
+ var sites = new Recreationsites();
+ 
+
+ 
+  sites.query(smQuery, {
+    success: function(collection) {
+      //print out the todos after the query returns from StackMob
+     // console.debug(sites.toJSON());
+var buttonHtmlString = "", pageHtmlString = "";
+
+// Gets all sitenames
+   sites.each(function(Recreationsite) {
+   buttonHtmlString += '<li><a href="#"><img src="http://jquerymobile.com/demos/1.1.0/docs/lists/images/album-bb.jpg" />' + Recreationsite.get("sitename") + '</a></li>';
+});
+console.debug(buttonHtmlString);
+$("#counties").append(buttonHtmlString);
+   $('ul').listview('refresh');
+
+
+  
+
+  
+  sites.count(smQuery, {
+    success: function(count) {//console.debug('count is:' + count );
+     //console.debug('count is:' + count );
+    }
+});
+//document.write(sites.toJSON())
+    }
+
+  });
+  
+
+}
 
 		
 </script>
