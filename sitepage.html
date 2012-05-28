@@ -63,7 +63,7 @@ var siteparam = getUrlVars()["siteid"];
  var smQuery = new StackMob.Collection.Query();
   //get all Todo items of high priority, order by createddate in ascending order.
   //Get the first 5 results.
-  smQuery.equals('recreationsite_id', 'siteparam').orderAsc('createddate'); //you can chain query parameters
+  smQuery.equals('recreationsite_id', siteparam).orderAsc('createddate'); //you can chain query parameters
   smQuery.setRange(0,0); //or add them individually
   
    var siteinfo = new Recreationsites();
