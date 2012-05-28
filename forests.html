@@ -21,21 +21,13 @@
 </head> 
 <body> 
 
-<div data-role="page" id="indexPage" data-title="Search Forest by County">
+<div data-role="page" id="forestPage" data-title="Search Forest by County">
 
 <script>
 
 
-$( '#indexPage' ).live( 'pageinit',function(event){
-											
-    /* <![CDATA[ */
-      //Remember to initialize StackMob before you use other StackMob functionality.
-        StackMob.init({
-        appName: "trevsapp2",
-        clientSubdomain: "trevorclowry",
-        apiVersion: 0
-      });
-    /* ]]> */
+$( '#forestPage' ).live( 'pageshow',function(event){
+
 
 
 getforestlist();
