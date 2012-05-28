@@ -71,7 +71,8 @@ var forestlisttring = "";
 
 // Gets all sitenames
    sites.each(function(Recreationsite) {
-   forestlisttring += '<li><a href="#"><img src="http://jquerymobile.com/demos/1.1.0/docs/lists/images/album-bb.jpg" />' + Recreationsite.get("sitename") + '</a></li>';
+					   
+   forestlisttring += '<li><a href="#"><img src="http://www.coillteoutdoors.ie/www/uploads/tx_r3coillterecreationsites/' + Recreationsite.get("image") + '" />' + Recreationsite.get("sitename") + '</a></li>';
 });
 console.debug(forestlisttring);
 $("#forests").append(forestlisttring);
