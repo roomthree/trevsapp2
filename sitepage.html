@@ -64,9 +64,9 @@ var siteparam = getUrlVars()["recreationsite_id"];
   //get all Todo items of high priority, order by createddate in ascending order.
   //Get the first 5 results.
   smQuery.equals('recreationsite_id', 'siteparam').orderAsc('createddate'); //you can chain query parameters
-  //smQuery.setRange(0,4); //or add them individually
+  smQuery.setRange(0,0); //or add them individually
   
-   var siteinfo = new Recreationsite();
+   var siteinfo = new Recreationsites();
    
   siteinfo.query(smQuery, {
 				 
@@ -74,6 +74,7 @@ var siteparam = getUrlVars()["recreationsite_id"];
 		
 		siteinfolistString =""; 
 		siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ collection.get("sitename") + '</a></li>'; 
+		console.debug(siteinfo.toJSON());
 		$("#siteinfolist").append(siteinfolistString); 
 		$('ul').listview('refresh'); 
 		
