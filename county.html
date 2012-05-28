@@ -4,9 +4,7 @@
 	<title>Coillte App</title> 
 
     
-
-    
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://static.stackmob.com/js/json2-min.js"></script>
     <script type="text/javascript" src="http://static.stackmob.com/js/underscore-1.3.3-min.js"></script>
     <script type="text/javascript" src="http://static.stackmob.com/js/stackmob-js-0.2.1-min.js"></script>
@@ -18,11 +16,21 @@
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
     
+
+    
 </head> 
 <body> 
 
 <div data-role="page" id="indexPage" data-title="Search Forest by County">
 
+	<div data-role="header" >
+    <a href="index.html" >Back</a>
+		<h1>Coillte Forest</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+
+<ul data-role="listview" data-inset="true" data-filter="true" id="counties">
 <script>
 
     /* <![CDATA[ */
@@ -232,15 +240,6 @@ sitesWicklow.count(smQueryWicklow, { success: function(count) {  buttonHtmlStrin
     //apply overrides here
 
 </script>
-	<div data-role="header" >
-    <a href="index.html" >Back</a>
-		<h1>Coillte Forest</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" >	
-
-<ul data-role="listview" data-inset="true" data-filter="true" id="counties">
-	
   <!--
 <li><a href="#">Antrim</a></li>
 <li><a href="#">Armagh</a></li>
