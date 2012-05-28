@@ -73,7 +73,7 @@ var siteparam = getUrlVars()["siteid"];
     success: function(collection) {
 		
 		siteinfolistString =""; 
-		siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ collection.get("sitename") + '</a></li>'; 
+		siteinfolistString += '<li><a href="/forests.html?county=Carlow">'+ siteinfo.get("sitename") + '</a></li>'; 
 		console.debug(siteinfo.toJSON());
 		$("#siteinfolist").append(siteinfolistString); 
 		$('ul').listview('refresh'); 
