@@ -60,15 +60,24 @@ var smQuery = new StackMob.Collection.Query();
     success: function(collection) {
       //print out the todos after the query returns from StackMob
      // console.debug(sites.toJSON());
-var buttonHtmlString = "", pageHtmlString = "";
+	 
+	 var forestrunonce;
+
+if (forestrunonce!=1)
+{
+	forestrunonce=1;
+	
+var forestlisttring = "";
 
 // Gets all sitenames
    sites.each(function(Recreationsite) {
-   buttonHtmlString += '<li><a href="#"><img src="http://jquerymobile.com/demos/1.1.0/docs/lists/images/album-bb.jpg" />' + Recreationsite.get("sitename") + '</a></li>';
+   forestlisttring += '<li><a href="#"><img src="http://jquerymobile.com/demos/1.1.0/docs/lists/images/album-bb.jpg" />' + Recreationsite.get("sitename") + '</a></li>';
 });
-console.debug(buttonHtmlString);
-$("#forests").append(buttonHtmlString);
+console.debug(forestlisttring);
+$("#forests").append(forestlisttring);
    $('ul').listview('refresh');
+   
+}
 
 
   
