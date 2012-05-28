@@ -68,7 +68,7 @@ var siteparam = getUrlVars()["recreationsite_id"];
   
    var siteinfo = new Recreationsite();
    
-  siteinfo.fetch( {
+  siteinfo.query(smQuery, {
 				 
     success: function(collection) {
 		
