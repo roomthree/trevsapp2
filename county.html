@@ -153,10 +153,9 @@ smQueryWicklow.equals('county', 'Wicklow').orderAsc('sitename');
  var sitesWexford= new Recreationsites();
  var sitesWicklow= new Recreationsites();
 
-
+if (countylistString=="")
+{
 	var countylistString = "";
-  			
-
 sitesCarlow.count(smQueryCarlow, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Carlow">Carlow<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesCavan.count(smQueryCavan, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Cavan">Cavan<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesClare.count(smQueryClare, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Clare">Clare<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
@@ -185,7 +184,7 @@ sitesWestmeath.count(smQueryWestmeath, { success: function(count) {  countylistS
 sitesWexford.count(smQueryWexford, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Wexford">Wexford<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesWicklow.count(smQueryWicklow, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Wicklow">Wicklow<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh');}});
 
-
+}
 
 
 
