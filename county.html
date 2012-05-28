@@ -25,7 +25,7 @@
 
 <ul data-role="listview" data-inset="true" data-filter="true" id="counties">
 <script>
-
+$( '#indexPage' ).live( 'pageshow',function(event){
     /* <![CDATA[ */
       //Remember to initialize StackMob before you use other StackMob functionality.
         StackMob.init({
@@ -47,12 +47,6 @@
       //});
 		
 		
-</script>
-
-  <script>
-
-$( '#indexPage' ).live( 'pageshow',function(event){
-
  var smQuery= new StackMob.Collection.Query();
  var smQueryAntrim= new StackMob.Collection.Query();
  var smQueryArmagh= new StackMob.Collection.Query();
