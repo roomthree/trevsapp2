@@ -16,6 +16,30 @@
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
     
+    <script>
+	
+	    /* <![CDATA[ */
+      //Remember to initialize StackMob before you use other StackMob functionality.
+        StackMob.init({
+        appName: "trevsapp2",
+        clientSubdomain: "trevorclowry",
+        apiVersion: 0
+      });
+    /* ]]> */
+
+      var Recreationsite = StackMob.Model.extend({
+        schemaName: 'recreationsite'  //schemaName must be lowercase
+      });
+      
+        var Recreationsites = StackMob.Collection.extend({
+        model: Recreationsite
+      });
+        //var Todos = StackMob.Collection.extend({
+        //model: Todo
+      //});
+	
+	</script>
+    
 
     
 </head> 
