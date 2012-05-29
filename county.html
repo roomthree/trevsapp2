@@ -135,6 +135,9 @@ smQueryWicklow.equals('county', 'Wicklow');
 var countylistString="";
 
 sitesCarlow.count(smQueryCarlow, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Carlow">Carlow<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh');}});
+
+
+/*
 sitesCavan.count(smQueryCavan, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Cavan">Cavan<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesClare.count(smQueryClare, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Clare">Clare<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesCork.count(smQueryCork, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Cork">Cork<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
@@ -145,7 +148,7 @@ sitesKerry.count(smQueryKerry, { success: function(count) { countylistString =""
 sitesKildare.count(smQueryKildare, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Kildare">Kildare<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesKilkenny.count(smQueryKilkenny, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Kilkenny">Kilkenny<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 
-/*
+
 sitesLaois.count(smQueryLaois, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Laois">Laois<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesLeitrim.count(smQueryLeitrim, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Leitrim">Leitrim<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesLimerick.count(smQueryLimerick, { success: function(count) { countylistString =""; countylistString += '<li><a href="/forests.html?county=Limerick">Limerick<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
