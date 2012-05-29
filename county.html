@@ -62,7 +62,6 @@ $( '#countyPage' ).live( 'pageshow',function(event){
  var smQueryDonegal= new StackMob.Collection.Query();
  var smQueryDown= new StackMob.Collection.Query();
  var smQueryDublin= new StackMob.Collection.Query();
- var smQueryFermanagh= new StackMob.Collection.Query();
  var smQueryGalway= new StackMob.Collection.Query();
  var smQueryKerry= new StackMob.Collection.Query();
  var smQueryKildare= new StackMob.Collection.Query();
@@ -164,7 +163,6 @@ sitesClare.count(smQueryClare, { success: function(count) {  countylistString ="
 sitesCork.count(smQueryCork, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Cork">Cork<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesDonegal.count(smQueryDonegal, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Donegal">Donegal<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesDublin.count(smQueryDublin, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Dublin">Dublin<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
-sitesFermanagh.count(smQueryFermanagh, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Fermanagh">Fermanagh<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesGalway.count(smQueryGalway, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Galway">Galway<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesKerry.count(smQueryKerry, { success: function(count) { countylistString =""; countylistString += '<li><a href="/forests.html?county=Kerry">Kerry<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesKildare.count(smQueryKildare, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Kildare">Kildare<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
