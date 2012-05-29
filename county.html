@@ -51,7 +51,37 @@
 
 $( '#countyPage' ).live( 'pageshow',function(event){
 
- var smQueryAntrim, smQueryArmagh, smQueryCarlow, smQueryCavan, smQueryClare, smQueryCork, smQueryDerry, smQueryDonegal, smQueryDown, smQueryDublin, smQueryGalway, smQueryKerry, smQueryKildare, smQueryKilkenny, smQueryLaois, smQueryLeitrim, smQueryLimerick, smQueryLongford, smQueryLouth, smQueryMayo, smQueryMeath, smQueryMonaghan, smQueryOffaly, smQueryRoscommon, smQuerySligo, smQueryTipperary, smQueryTyrone, smQueryWaterford, smQueryWestmeath, smQueryWexford, smQueryWicklow= new StackMob.Collection.Query();
+var smQueryAntrim= new StackMob.Collection.Query();
+ var smQueryArmagh= new StackMob.Collection.Query();
+ var smQueryCarlow= new StackMob.Collection.Query();
+ var smQueryCavan= new StackMob.Collection.Query();
+ var smQueryClare= new StackMob.Collection.Query();
+ var smQueryCork= new StackMob.Collection.Query();
+ var smQueryDerry= new StackMob.Collection.Query();
+ var smQueryDonegal= new StackMob.Collection.Query();
+ var smQueryDown= new StackMob.Collection.Query();
+ var smQueryDublin= new StackMob.Collection.Query();
+ var smQueryGalway= new StackMob.Collection.Query();
+ var smQueryKerry= new StackMob.Collection.Query();
+ var smQueryKildare= new StackMob.Collection.Query();
+ var smQueryKilkenny= new StackMob.Collection.Query();
+ var smQueryLaois= new StackMob.Collection.Query();
+ var smQueryLeitrim= new StackMob.Collection.Query();
+ var smQueryLimerick= new StackMob.Collection.Query();
+ var smQueryLongford= new StackMob.Collection.Query();
+ var smQueryLouth= new StackMob.Collection.Query();
+ var smQueryMayo= new StackMob.Collection.Query();
+ var smQueryMeath= new StackMob.Collection.Query();
+ var smQueryMonaghan= new StackMob.Collection.Query();
+ var smQueryOffaly= new StackMob.Collection.Query();
+ var smQueryRoscommon= new StackMob.Collection.Query();
+ var smQuerySligo= new StackMob.Collection.Query();
+ var smQueryTipperary= new StackMob.Collection.Query();
+ var smQueryTyrone= new StackMob.Collection.Query();
+ var smQueryWaterford= new StackMob.Collection.Query();
+ var smQueryWestmeath= new StackMob.Collection.Query();
+ var smQueryWexford= new StackMob.Collection.Query();
+ var smQueryWicklow= new StackMob.Collection.Query();
 
 
 smQueryAntrim.equals('county', 'Antrim').orderAsc('sitename');
@@ -121,10 +151,7 @@ smQueryWicklow.equals('county', 'Wicklow').orderAsc('sitename');
 
 
 
-if (countyrunonce!=1)
-{
-	var countyrunonce;
-	countyrunonce=1;
+
 sitesCarlow.count(smQueryCarlow, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Carlow">Carlow<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesCavan.count(smQueryCavan, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Cavan">Cavan<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesClare.count(smQueryClare, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Clare">Clare<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
@@ -151,8 +178,6 @@ sitesWaterford.count(smQueryWaterford, { success: function(count) {  countylistS
 sitesWestmeath.count(smQueryWestmeath, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Westmeath">Westmeath<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesWexford.count(smQueryWexford, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Wexford">Wexford<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesWicklow.count(smQueryWicklow, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Wicklow">Wicklow<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh');}});
-
-}
 
   
  });
