@@ -61,7 +61,7 @@ var smQuery = new StackMob.Collection.Query();
   //users.query(smQuery);
   var countyparam = getUrlVars()["county"];
  
-  if( countyparam!="")
+  if( countyparam!="fullist")
   {
   smQuery.equals('county', countyparam).orderAsc('sitename'); //you can chain query parameters
   }
