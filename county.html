@@ -157,6 +157,8 @@ smQueryWicklow.equals('county', 'Wicklow');
 
 
 var countylistString="";
+$("ul").clear()
+$("ul").empty()
 
 sitesCarlow.count(smQueryCarlow, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Carlow">Carlow<span class="ui-li-count">Number of Forests: ' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh');}});
 sitesCavan.count(smQueryCavan, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Cavan">Cavan<span class="ui-li-count">Number of Forests: ' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
