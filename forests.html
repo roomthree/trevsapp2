@@ -85,8 +85,7 @@ var forestlisttring = "";
    sites.each(function(Recreationsite) {
 
 if (Recreationsite.get("image")!="")
-{
-thumbnailimage = 'http://www.coillteoutdoors.ie/uploads/tx_r3coillterecreationsites/' + Recreationsite.get("image");	
+{ thumbnailimage = 'http://www.coillteoutdoors.ie/uploads/tx_r3coillterecreationsites/' + Recreationsite.get("image");	
 }
 else
 {
@@ -96,6 +95,8 @@ thumbnailimage = 	'http://www.coillteoutdoors.ie/uploads/tx_r3coillterecreations
    forestlisttring += '<li><a href="sitepage.html?siteid=' + Recreationsite.get("recreationsite_id") + '"><img src="' + thumbnailimage + '" />' + Recreationsite.get("sitename") + '</a></li>';
 });
 console.debug(forestlisttring);
+$('ul li').remove();
+$("ul").empty();
 $("#forests").append(forestlisttring);
    $('ul').listview('refresh');
    
