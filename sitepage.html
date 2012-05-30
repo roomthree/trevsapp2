@@ -83,33 +83,32 @@ bigimage = 'http://www.coillteoutdoors.ie/uploads/tx_r3coillterecreationsites/' 
 							   
 			siteinfolistString =""; 
 		
-			siteinfolistString += '<tr><td width="100">Site Name</td><td>'+ Recreationsitez.get('sitename') + '</td></tr>'; 
-  siteinfolistString += '<tr><td width="100">County</td><td>'+ Recreationsitez.get('county') + '</td></tr>'; 
-if (Recreationsitez.get("image")!=""){ siteinfolistString += '<tr><td width="100">Image</td><td><img src="' + bigimage + '" /></td></tr>';}  
-if (Recreationsitez.get("location")!=""){ siteinfolistString += '<tr><td width="100">Location</td><td>'+ Recreationsitez.get('location') + '</td></tr>'; }
-if (Recreationsitez.get("download_map")!=""){ siteinfolistString += '<tr><td width="100">Download Map</td><td>'+ Recreationsitez.get('download_map') + '</td></tr>'; }
-if (Recreationsitez.get("googlemap")!=""){ siteinfolistString += '<tr><td width="100">Google Map</td><td>'+ Recreationsitez.get('googlemap') + '</td></tr>'; }
-if (Recreationsitez.get("direction")!=""){ siteinfolistString += '<tr><td width="100">Directions</td><td>'+ Recreationsitez.get('direction') + '</td></tr>'; }
-if (Recreationsitez.get("grid_ref")!=""){ siteinfolistString += '<tr><td width="100">Grid Ref</td><td>'+ Recreationsitez.get('grid_ref') + '</td></tr>'; }
-if (Recreationsitez.get("os_map")!=""){ siteinfolistString += '<tr><td width="100">OS Map</td><td>'+ Recreationsitez.get('os_map') + '</td></tr>'; }
-if (Recreationsitez.get("trails")!=""){ siteinfolistString += '<tr><td width="100">Trails</td><td>'+ Recreationsitez.get('trails') + '</td></tr>'; }
-if (Recreationsitez.get("trails_map")!=""){ siteinfolistString += '<tr><td width="100">Trails Map</td><td>'+ Recreationsitez.get('trails_map') + '</td></tr>';}
+			siteinfolistString += '<tr><td width="100" valign="top"><strong>Site Name</strong></td><td>'+ Recreationsitez.get('sitename') + '</td></tr>'; 
+  siteinfolistString += '<tr><td width="100" valign="top"><strong>County</strong></td><td>'+ Recreationsitez.get('county') + '</td></tr>'; 
+if (Recreationsitez.get("image")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Image</strong></td><td><img src="' + bigimage + '" /></td></tr>';}  
+if (Recreationsitez.get("location")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Location</strong></td><td>'+ Recreationsitez.get('location') + '</td></tr>'; }
+if (Recreationsitez.get("download_map")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Download Map</strong></td><td>'+ Recreationsitez.get('download_map') + '</td></tr>'; }
+if (Recreationsitez.get("googlemap")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Google Map</strong></td><td>'+ Recreationsitez.get('googlemap') + '</td></tr>'; }
+if (Recreationsitez.get("direction")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Directions</strong></td><td>'+ Recreationsitez.get('direction') + '</td></tr>'; }
+if (Recreationsitez.get("grid_ref")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Grid Ref</strong></td><td>'+ Recreationsitez.get('grid_ref') + '</td></tr>'; }
+if (Recreationsitez.get("os_map")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>OS Map</strong></td><td>'+ Recreationsitez.get('os_map') + '</td></tr>'; }
+if (Recreationsitez.get("trails")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Trails</strong></td><td>'+ Recreationsitez.get('trails') + '</td></tr>'; }
+if (Recreationsitez.get("trails_map")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Trails Map</strong></td><td>'+ Recreationsitez.get('trails_map') + '</td></tr>';}
 
-if (Recreationsitez.get("details")!=""){ siteinfolistString += '<tr><td width="100">Details</td><td>'+ Recreationsitez.get('details') + '</td></tr>';}
-if (Recreationsitez.get("activities")!=""){ siteinfolistString += '<tr><td width="100">Activities</td><td>'+ Recreationsitez.get('activities') + '</td></tr>'; }
-if (Recreationsitez.get("features")!=""){ siteinfolistString += '<tr><td width="100">Features</td><td>'+ Recreationsitez.get('features') + '</td></tr>'; }
+if (Recreationsitez.get("details")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Details</strong></td><td>'+ Recreationsitez.get('details') + '</td></tr>';}
+if (Recreationsitez.get("activities")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Activities</strong></td><td>'+ Recreationsitez.get('activities') + '</td></tr>'; }
+if (Recreationsitez.get("features")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Features</strong></td><td>'+ Recreationsitez.get('features') + '</td></tr>'; }
 
 
-if (Recreationsitez.get("num_car_spaces")!=""){ siteinfolistString += '<tr><td width="100">Number Car Spaces</td><td>'+ Recreationsitez.get('num_car_spaces') + '</td></tr>'; }
-if (Recreationsitez.get("car_park_closes")!=""){ siteinfolistString += '<tr><td width="100">Car Park Closes</tr><tr>'+ Recreationsitez.get('car_park_closes') + '</td></tr>';} 
-if (Recreationsitez.get("car_park_opens")!=""){ siteinfolistString += '<tr><td width="100">Car Park Opens</td><td>'+ Recreationsitez.get('car_park_opens') + '</td></tr>'; }
-if (Recreationsitez.get("parking_fee")!=""){ siteinfolistString += '<tr><td width="100">Parking Fee</td><td>'+ Recreationsitez.get('parking_fee') + '</td></tr>'; }
-if (Recreationsitez.get("parking_options")!=""){ siteinfolistString += '<tr><td width="100">Parking Options</td><td>'+ Recreationsitez.get('parking_options') + '</td></tr>'; } 
+if (Recreationsitez.get("num_car_spaces")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Number Car Spaces</strong></td><td>'+ Recreationsitez.get('num_car_spaces') + '</td></tr>'; }
+if (Recreationsitez.get("car_park_closes")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Car Park Closes</tr><tr>'+ Recreationsitez.get('car_park_closes') + '</td></tr>';} 
+if (Recreationsitez.get("car_park_opens")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Car Park Opens</strong></td><td>'+ Recreationsitez.get('car_park_opens') + '</td></tr>'; }
+if (Recreationsitez.get("parking_fee")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Parking Fee</strong></td><td>'+ Recreationsitez.get('parking_fee') + '</td></tr>'; }
+if (Recreationsitez.get("parking_options")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Parking Options</strong></td><td>'+ Recreationsitez.get('parking_options') + '</td></tr>'; } 
 
-if (Recreationsitez.get("contact_name")!=""){ siteinfolistString += '<tr><td width="100">Contact Name</td><td>'+ Recreationsitez.get('contact_name') + '</td></tr>'; }
-if (Recreationsitez.get("contact_phone")!=""){ siteinfolistString += '<tr><td width="100">Contact Phone</td><td>'+ Recreationsitez.get('contact_phone') + '</td></tr>';} 
-if (Recreationsitez.get("contactemail")!=""){ siteinfolistString += '<tr><td width="100">Contact Email</td><td>'+ Recreationsitez.get('contactemail') + '</td></tr>'; }
-if (Recreationsitez.get("lastmoddate")!=""){ siteinfolistString += '<tr><td width="100">Last Updated</td><td>'+ Recreationsitez.get('lastmoddate') + '</td></tr>';}
+if (Recreationsitez.get("contact_name")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Contact Name</strong></td><td>'+ Recreationsitez.get('contact_name') + '</td></tr>'; }
+if (Recreationsitez.get("contact_phone")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Contact Phone</strong></td><td><tel>'+ Recreationsitez.get('contact_phone') + '</tel></td></tr>';} 
+if (Recreationsitez.get("contactemail")!=""){ siteinfolistString += '<tr><td width="100" valign="top"><strong>Contact Email</strong></td><td><a href="mailto:'+ Recreationsitez.get('contactemail') + '">' + Recreationsitez.get('contactemail') + '</a></td></tr>'; }
 
 			
 			
@@ -157,15 +156,9 @@ getSiteInfo();
      <table data-role="listview" id="siteinfolist">
 	</table>
 
-	<a href="favouritetext.html" data-rel="dialog" data-role="button" data-icon="star">Add Forest to Favourites</a>
+	
     
 	</div><!-- /content -->
-    <div data-role="footer" class="ui-bar">
-	<a href="index.html" data-role="button" data-icon="plus">Add to Favourites</a>
-<a href="index.html" data-role="button" data-icon="minus">Remove from Favourites</a>
-<a href="contact.html" data-role="button" data-icon="minus">Contact Us</a>
-
-</div>
 
 </div><!-- /page -->
 
