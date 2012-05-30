@@ -158,7 +158,7 @@ smQueryWicklow.equals('county', 'Wicklow');
 
 var countylistString="";
 
-sitesCarlow.count(smQueryCarlow, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Carlow">Carlow<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh');}});
+sitesCarlow.count(smQueryCarlow, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Carlow">Carlow<span class="ui-li-count">Number of Sites:' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh');}});
 sitesCavan.count(smQueryCavan, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Cavan">Cavan<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesClare.count(smQueryClare, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Clare">Clare<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
 sitesCork.count(smQueryCork, { success: function(count) {  countylistString =""; countylistString += '<li><a href="/forests.html?county=Cork">Cork<span class="ui-li-count">' + count + '</span></a></li>'; $("#counties").append(countylistString); $('ul').listview('refresh'); }});
