@@ -76,38 +76,38 @@ var siteparam = getUrlVars()["siteid"];
 		siteinfo.each(function(Recreationsitez) {
 			siteinfolistString =""; 
 			siteinfolistString += '<h1>' + Recreationsitez.get('sitename') + '</h1>';
-			siteinfolistString += '<tr><td width="100">Site Name</td></tr><tr>'+ Recreationsitez.get('sitename') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">County</td></tr><tr>'+ Recreationsitez.get('county') + '</td></tr>'; 
+			siteinfolistString += '<tr><td width="100">Site Name</td><td>'+ Recreationsitez.get('sitename') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">County</td><td>'+ Recreationsitez.get('county') + '</td></tr>'; 
 
-siteinfolistString += '<tr><td width="100">Image</td></tr><tr>'+ Recreationsitez.get('image') + '</td></tr>'; 
-
-
-siteinfolistString += '<tr><td width="100">Location</td></tr><tr>'+ Recreationsitez.get('location') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Download Map</td></tr><tr>'+ Recreationsitez.get('download_map') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Google Map</td></tr><tr>'+ Recreationsitez.get('googlemap') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Directions</td></tr><tr>'+ Recreationsitez.get('direction') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Grid Ref</td></tr><tr>'+ Recreationsitez.get('grid_ref') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">OS Map</td></tr><tr>'+ Recreationsitez.get('os_map') + '</td></tr>';
-siteinfolistString += '<tr><td width="100">Trails</td></tr><tr>'+ Recreationsitez.get('trails') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Trails Map</td></tr><tr>'+ Recreationsitez.get('trails_map') + '</td></tr>';
-
-siteinfolistString += '<tr><td width="100">Details</td></tr><tr>'+ Recreationsitez.get('details') + '</td></tr>';
-siteinfolistString += '<tr><td width="100">Activities</td></tr><tr>'+ Recreationsitez.get('activities') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Features</td></tr><tr>'+ Recreationsitez.get('features') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Image</td><td>'+ Recreationsitez.get('image') + '</td></tr>'; 
 
 
-siteinfolistString += '<tr><td width="100">Number Car Spaces</td></tr><tr>'+ Recreationsitez.get('num_car_spaces') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Location</td><td>'+ Recreationsitez.get('location') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Download Map</td><td>'+ Recreationsitez.get('download_map') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Google Map</td><td>'+ Recreationsitez.get('googlemap') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Directions</td><td>'+ Recreationsitez.get('direction') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Grid Ref</td><td>'+ Recreationsitez.get('grid_ref') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">OS Map</td><td>'+ Recreationsitez.get('os_map') + '</td></tr>';
+siteinfolistString += '<tr><td width="100">Trails</td><td>'+ Recreationsitez.get('trails') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Trails Map</td><td>'+ Recreationsitez.get('trails_map') + '</td></tr>';
+
+siteinfolistString += '<tr><td width="100">Details</td><td>'+ Recreationsitez.get('details') + '</td></tr>';
+siteinfolistString += '<tr><td width="100">Activities</td><td>'+ Recreationsitez.get('activities') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Features</td><td>'+ Recreationsitez.get('features') + '</td></tr>'; 
+
+
+siteinfolistString += '<tr><td width="100">Number Car Spaces</td><td>'+ Recreationsitez.get('num_car_spaces') + '</td></tr>'; 
 siteinfolistString += '<tr><td width="100">Car Park Closes</tr><tr>'+ Recreationsitez.get('car_park_closes') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Car Park Opens</td></tr><tr>'+ Recreationsitez.get('car_park_opens') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Parking Fee</td></tr><tr>'+ Recreationsitez.get('parking_fee') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Parking Options</td></tr><tr>'+ Recreationsitez.get('parking_options') + '</td></tr>';  
+siteinfolistString += '<tr><td width="100">Car Park Opens</td><td>'+ Recreationsitez.get('car_park_opens') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Parking Fee</td><td>'+ Recreationsitez.get('parking_fee') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Parking Options</td><td>'+ Recreationsitez.get('parking_options') + '</td></tr>';  
 
-siteinfolistString += '<tr><td width="100">Contact Name</td></tr><tr>'+ Recreationsitez.get('contact_name') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Contact Phone</td></tr><tr>'+ Recreationsitez.get('contact_phone') + '</td></tr>'; 
-siteinfolistString += '<tr><td width="100">Contact Email</td></tr><tr>'+ Recreationsitez.get('contactemail') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Contact Name</td><td>'+ Recreationsitez.get('contact_name') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Contact Phone</td><td>'+ Recreationsitez.get('contact_phone') + '</td></tr>'; 
+siteinfolistString += '<tr><td width="100">Contact Email</td><td>'+ Recreationsitez.get('contactemail') + '</td></tr>'; 
 
 
-siteinfolistString += '<tr><td width="100">Last Updated</td></tr><tr>'+ Recreationsitez.get('lastmoddate') + '</td></tr>';
+siteinfolistString += '<tr><td width="100">Last Updated</td><td>'+ Recreationsitez.get('lastmoddate') + '</td></tr>';
 
 			
 			
