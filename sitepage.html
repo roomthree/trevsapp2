@@ -72,11 +72,15 @@ var siteparam = getUrlVars()["siteid"];
 				 
     success: function(collection) {
 		
-if (Recreationsitez.get("image")!=""){ 
+
+		siteinfo.each(function(Recreationsitez) {
+							   
+							   
+							   if (Recreationsitez.get("image")!=""){ 
 bigimage = 'http://www.coillteoutdoors.ie/uploads/tx_r3coillterecreationsites/' + Recreationsitez.get("image");	
 }
 
-		siteinfo.each(function(Recreationsitez) {
+							   
 			siteinfolistString =""; 
 		
 			siteinfolistString += '<tr><td width="100">Site Name</td><td>'+ Recreationsitez.get('sitename') + '</td></tr>'; 
