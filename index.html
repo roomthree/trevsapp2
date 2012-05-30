@@ -15,18 +15,28 @@
 </head>
 <body>
 <div data-role="page" data-title="Forest Finder" id="HomePage">
-
+<script>
+$( '#HomePage' ).live( 'pageshow',function(event){
+										   
+			var indexstring = '<li><a href="county.html">Search by County</a></li><li><a href="forests.html" >Search by Forest Name</a></li>';
+			
+			$("#indexlist").append(indexstring);
+   			$('ul').listview('refresh');
+										   });
+										   	 
+	</script>  
 
   <div data-role="header">
     <h1>Forest Finder</h1>
   </div>
   <!-- /header -->
   <div data-role="content">
-    <ul data-role="listview" data-inset="true">
-      <li><a href="county.html">Search by County</a></li>
-      <li><a href="forests.html" >Search by Forest Name</a></li>
+    <ul data-role="listview" data-inset="true" id="indexlist">
+  
     </ul>
   </div>
+
+ 
 
   <!-- /content -->
 </div>
