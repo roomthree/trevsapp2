@@ -60,8 +60,15 @@ var smQuery = new StackMob.Collection.Query();
    //smQuery.select('sitename');
   //users.query(smQuery);
   var countyparam = getUrlVars()["county"];
-  
+ 
+  if( countyparam!="")
+  {
   smQuery.equals('county', countyparam).orderAsc('sitename'); //you can chain query parameters
+  }
+  else
+  {
+	 smQuery.NOTequals('county', 'madeupvar').orderAsc('sitename'); 
+   }
   //Get the first 5 results.
   //smQuery.setRange(0,4); //or add them individually
   
@@ -100,8 +107,7 @@ $('ul li').remove();
 $("ul").empty();
 $("#forests").append(forestlisttring);
    $('ul').listview('refresh');
-   
-}
+   }
 
 
   
